@@ -1,0 +1,438 @@
+:root {
+    /* Cores principais - Azul Profissional */
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #3b82f6;
+    --primary-50: #eff6ff;
+    --primary-100: #dbeafe;
+    
+    /* Cores de suporte */
+    --secondary: #64748b;
+    --accent: #06b6d4;
+    --accent-dark: #0891b2;
+    
+    /* Cores neutras */
+    --dark: #0f172a;
+    --dark-muted: #334155;
+    --light: #f8fafc;
+    --light-muted: #e2e8f0;
+    --card: rgba(248, 250, 252, 0.8);
+    
+    /* Cores de estado */
+    --success: #10b981;
+    --success-dark: #059669;
+    --warning: #f59e0b;
+    --error: #ef4444;
+    
+    /* Cores específicas */
+    --whatsapp: #22C55E;
+    --whatsapp-dark: #16A34A;
+    --linkedin: #0A66C2;
+    --linkedin-dark: #004182;
+    --linkedin-light: #3283e6;
+  }
+  
+  /* Estilos base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background: linear-gradient(to bottom, #ffffff, var(--primary-50));
+  }
+  
+  /* Botão do WhatsApp */
+  .btn-whatsapp {
+    background: linear-gradient(135deg, var(--whatsapp), var(--whatsapp-dark));
+    transition: all 0.3s ease;
+  }
+  
+  .btn-whatsapp:hover {
+    background: linear-gradient(135deg, var(--whatsapp-dark), #15803D);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px -5px rgba(34, 197, 94, 0.4);
+  }
+  
+  /* Botão primário */
+  .btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-dark), #1e40af);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
+  }
+  
+  /* Botão do LinkedIn */
+  .btn-linkedin {
+    background: linear-gradient(135deg, var(--linkedin), var(--linkedin-dark));
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-linkedin:hover {
+    background: linear-gradient(135deg, var(--linkedin-dark), #003366);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px -5px rgba(10, 102, 194, 0.4);
+    color: white;
+  }
+  
+  /* Versão outline do LinkedIn */
+  .btn-linkedin-outline {
+    background: transparent;
+    color: var(--linkedin);
+    border: 2px solid var(--linkedin);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-linkedin-outline:hover {
+    background: var(--linkedin);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px -5px rgba(10, 102, 194, 0.3);
+  }
+  
+  /* Cards de serviço */
+  .service-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--light-muted);
+  }
+  
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.15);
+    border-color: var(--primary-100);
+  }
+  
+  /* Ícones de benefícios */
+  .benefit-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .benefit-icon:hover {
+    background: rgba(37, 99, 235, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .benefit-icon svg {
+    color: var(--primary);
+  }
+  
+  /* Números dos passos */
+  .step-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  }
+  
+  /* Ícones de contato */
+  .contact-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-icon:hover {
+    background: rgba(37, 99, 235, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .contact-icon svg {
+    color: var(--primary);
+  }
+  
+  /* Ícone específico do LinkedIn */
+  .contact-icon-linkedin {
+    background: rgba(10, 102, 194, 0.1);
+  }
+  
+  .contact-icon-linkedin:hover {
+    background: rgba(10, 102, 194, 0.2);
+  }
+  
+  .contact-icon-linkedin svg {
+    color: var(--linkedin);
+  }
+  
+  /* Botão flutuante do WhatsApp */
+  .floating-whatsapp {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 50;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Focus ring para acessibilidade */
+  .focus-ring:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+  
+  /* Header */
+  header {
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+  }
+  
+  header.scroll-down {
+    transform: translateY(-100%);
+  }
+  
+  header.scroll-up {
+    transform: translateY(0);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
+  }
+  
+  /* Logo */
+  .w-10.h-10.rounded-lg {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+  }
+  
+  /* Badges e elementos de destaque */
+  .inline-flex.items-center.rounded-full {
+    background: rgba(37, 99, 235, 0.1) !important;
+    color: var(--primary);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+  }
+  
+  .bg-green-100 {
+    background: rgba(16, 185, 129, 0.1) !important;
+    color: var(--success) !important;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+  }
+  
+  /* Animações suaves */
+  .service-card,
+  .benefit-icon,
+  .step-number,
+  .contact-icon {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Seções com fundo colorido */
+  .bg-slate-50 {
+    background-color: var(--primary-50) !important;
+  }
+  
+  .bg-slate-900 {
+    background-color: var(--dark) !important;
+  }
+  
+  /* Cards informativos */
+  .p-4.rounded-lg {
+    background: var(--card) !important;
+    border: 1px solid var(--light-muted);
+  }
+  
+  /* Links e navegação */
+  nav a {
+    color: var(--dark-muted);
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--primary);
+  }
+  
+  /* Text colors */
+  .text-slate-600 {
+    color: var(--secondary) !important;
+  }
+  
+  .text-slate-700 {
+    color: var(--dark-muted) !important;
+  }
+  
+  .text-slate-800 {
+    color: var(--dark-muted) !important;
+  }
+  
+  .text-slate-900 {
+    color: var(--dark) !important;
+  }
+  
+  .text-green-500 {
+    color: var(--primary) !important;
+  }
+  
+  /* Border colors */
+  .border-slate-100 {
+    border-color: var(--light-muted) !important;
+  }
+  
+  .border-slate-200 {
+    border-color: var(--light-muted) !important;
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--dark) !important;
+    color: white;
+  }
+  
+  footer .text-slate-400 {
+    color: #94a3b8 !important;
+  }
+  
+  /* Efeitos de gradiente melhorados */
+  .bg-gradient-to-b {
+    background: linear-gradient(to bottom, #ffffff, var(--primary-50)) !important;
+  }
+  
+  /* Responsividade adicional */
+  @media (max-width: 768px) {
+    .floating-whatsapp {
+      bottom: 16px;
+      right: 16px;
+      padding: 12px 16px;
+      font-size: 0.875rem;
+    }
+    
+    .service-card:hover {
+      transform: none;
+    }
+  }
+  
+  /* Melhorias de contraste e acessibilidade */
+  .btn-primary:focus,
+  .btn-whatsapp:focus,
+  .btn-linkedin:focus,
+  .focus-ring:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+  }
+  
+  .btn-linkedin:focus {
+    outline-color: var(--linkedin);
+    box-shadow: 0 0 0 4px rgba(10, 102, 194, 0.1);
+  }
+  
+  /* Estados hover para todos os elementos interativos */
+  a, button {
+    transition: all 0.3s ease;
+  }
+  
+  /* Loading states (para futuras implementações) */
+  .loading {
+    background: linear-gradient(90deg, var(--light-muted) 25%, var(--light) 50%, var(--light-muted) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--light);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+  }
+  
+  /* Estilos específicos para ícones do LinkedIn */
+  .linkedin-icon {
+    color: var(--linkedin);
+  }
+  
+  .linkedin-icon:hover {
+    color: var(--linkedin-dark);
+  }
+  
+  /* Botão do LinkedIn no footer */
+  footer .btn-linkedin-outline {
+    border-color: #94a3b8;
+    color: #94a3b8;
+  }
+  
+  footer .btn-linkedin-outline:hover {
+    border-color: var(--linkedin);
+    background: var(--linkedin);
+    color: white;
+  }
