@@ -436,3 +436,36 @@
     background: var(--linkedin);
     color: white;
   }
+
+  /* --- Correção dos cards de serviço --- */
+.service-card {
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: white;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+/* Mantém o gradiente verde apenas no destaque */
+.service-card.popular {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #22c55e, #16a34a) border-box;
+}
+
+/* Corrige o selo verde */
+.service-card .badge-green {
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+/* Corrige ícones e cores do texto */
+.text-green-500 {
+  color: #16a34a !important;
+}
