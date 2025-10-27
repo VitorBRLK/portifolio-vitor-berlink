@@ -36,6 +36,7 @@
 
         <nav class="hidden md:flex items-center gap-6">
           <a href="#servicos" class="text-sm hover:text-slate-900">Serviços</a>
+          <a href="#projetos" class="text-sm hover:text-slate-900">Projetos</a>
           <a href="#beneficios" class="text-sm hover:text-slate-900">Benefícios</a>
           <a href="#como-funciona" class="text-sm hover:text-slate-900">Como Funciona</a>
           <a href="#contato" class="text-sm hover:text-slate-900">Contato</a>
@@ -54,6 +55,7 @@
     <div id="mobileMenu" class="hidden md:hidden bg-white/90 backdrop-blur-sm border-t border-slate-100">
       <div class="px-4 py-4 flex flex-col gap-3">
         <a href="#servicos" class="py-2">Serviços</a>
+        <a href="#projetos" class="py-2">Projetos</a>
         <a href="#beneficios" class="py-2">Benefícios</a>
         <a href="#como-funciona" class="py-2">Como Funciona</a>
         <a href="#contato" class="py-2">Contato</a>
@@ -220,6 +222,60 @@
               Fale comigo no WhatsApp
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-slate-900">Projetos</h2>
+          <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
+            Veja alguns exemplos de automações e integrações que já entreguei
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          
+          <!-- Projeto 1 -->
+          <div class="service-card">
+            <img src="./img/projeto1.jpg" alt="Automação de Faturamento" class="w-full h-56 object-cover">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-slate-900">Automação de Faturamento</h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Sistema que integra planilhas de vendas com o sistema financeiro, gerando relatórios automáticos e otimizando 80% do tempo manual.
+              </p>
+              <div class="mt-6 flex items-center justify-between">
+                <span class="text-sm text-slate-500">Tecnologias: Python, Google Sheets API, n8n</span>
+                <a href="https://wa.me/5571986893419?text=Olá%2C+gostei+do+projeto+de+faturamento%21" 
+                  target="_blank"
+                  class="text-sm font-medium text-indigo-600 hover:underline">
+                  Saiba mais →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="service-card">
+            <img src="./img/projeto2.jpg" alt="Integração de CRM" class="w-full h-56 object-cover">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-slate-900">Integração de CRM e WhatsApp</h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Automação que conecta CRM com WhatsApp Business, enviando mensagens automáticas e atualizando leads em tempo real.
+              </p>
+              <div class="mt-6 flex items-center justify-between">
+                <span class="text-sm text-slate-500">Tecnologias: Python, Twilio API, Airtable</span>
+                <a href="https://wa.me/5571986893419?text=Olá%2C+gostei+do+projeto+de+CRM+e+WhatsApp%21" 
+                  target="_blank"
+                  class="text-sm font-medium text-indigo-600 hover:underline">
+                  Saiba mais →
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
